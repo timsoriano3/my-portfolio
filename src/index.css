@@ -1,9 +1,9 @@
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap');
 
-.cursive {
-  font-family: "Crimson Text", cursive;
+.my_name {
+  font-family: "Texturina", name;
   font-weight: 700;
 }
 
