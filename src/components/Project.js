@@ -57,7 +57,7 @@ export default function Project() {
                              href={project.link} 
                              rel="noopener noreferrer" 
                              target="_blank"
-                             className="text-blue-500 font-bold hover:underline hover:text-yellow-400"
+                             className="text-blue-500 font-bold hover:underline hover:text-yellow-400 text-xl"
                             >
                                 View Project{" "}
                                 <span role="img" aria-label="right pointer">👉</span>
