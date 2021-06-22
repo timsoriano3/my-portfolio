@@ -31,7 +31,7 @@ export default function Post() {
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">
                     Welcome to my page of blog posts!
                 </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cold-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData && postData.map((post, index) => (
                         <article>
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
