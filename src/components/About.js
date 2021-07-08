@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import river from '../river.jpg';
+import aoraki from '../aoraki.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -26,8 +26,8 @@ export default function About() {
     return (
         <main>
             <img 
-             src={river}
-             alt="Autumn Forest River"
+             src={aoraki}
+             alt="Aoraki River"
              className="scroll fixed local object-cover h-full w-full"
             />
             <div className="p-10 lg:pt-48 container mx-auto relative">
