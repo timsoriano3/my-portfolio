@@ -26,8 +26,8 @@ export default function About() {
     return (
         <main>
             <img 
-             src={aoraki}
-             alt="Aoraki River"
+             src={river}
+             alt="Autumn Forest River"
              className="absolute object-cover h-full w-full"
             />
             <div className="p-10 lg:pt-48 container mx-auto relative">
