@@ -28,7 +28,7 @@ export default function About() {
             <img 
              src={river}
              alt="Autumn Forest River"
-             className="absolute object-cover h-full w-full"
+             className="scroll fixed local object-cover h-full w-full"
             />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-blue-800 rounded-lg shadow-2xl lg:flex p-20">
