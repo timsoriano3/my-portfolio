@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import aoraki from '../aoraki.jpg';
+import river from '../river.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
