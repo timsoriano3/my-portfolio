@@ -1,7 +1,7 @@
 export default {
     name: 'fish',
     title: 'Fish',
-    type: 'image',
+    type: 'document',
     fields: [
       {
         name: 'title',
