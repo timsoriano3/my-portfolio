@@ -30,6 +30,13 @@ export default function Navbar() {
                         Projects
                     </NavLink>
                     <NavLink 
+                     to="/fish" 
+                     className="inflex-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-400"
+                     activeClassName="text-yellow-400 bg-blue-900"
+                    >
+                        Fish Gallery
+                    </NavLink>
+                    <NavLink 
                      to="/about" 
                      className="inflex-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-400"
                      activeClassName="text-yellow-400 bg-blue-900"
