@@ -9,6 +9,7 @@ import blockContent from './blockContent'
 import post from './post'
 import project from './project'
 import author from './author'
+import fish from './fish'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
