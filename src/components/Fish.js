@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
 
-export default function Project() {
-    const [fishData, setProjectData] = useState(null);
+export default function Fish() {
+    const [fishData, setFishData] = useState(null);
 
     useEffect(() => {
         sanityClient.fetch(`*[_type == "fish"]{
@@ -14,7 +14,7 @@ export default function Project() {
                 url
             },
             alt
-        }`).then((data) => setProjectData(data))
+        }`).then((data) => setFishData(data))
         .catch(console.error);
     }, []);
     
@@ -28,7 +28,7 @@ export default function Project() {
                     Welcome to my Fish Catch Gallery!
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {postData && postData.map((fish, index) => (
+                    {fishData && fishData.map((fish, index) => (
                         <article>
                         <Link to={"/post/" + fish.slug.current} key={fish.slug.current}>
                             <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-blue-400" key={index}>
