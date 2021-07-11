@@ -30,7 +30,7 @@ export default function Fish() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {fishData && fishData.map((fish, index) => (
                         <article>
-                        <Link to={"/post/" + fish.slug.current} key={fish.slug.current}>
+                        <Link to={"/fish/" + fish.slug.current} key={fish.slug.current}>
                             <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-blue-400" key={index}>
                                 <img 
                                  src={fish.mainImage.asset.url}
