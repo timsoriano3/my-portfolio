@@ -7,14 +7,15 @@ export default function Fish() {
 
     useEffect(() => {
         sanityClient.fetch(`*[_type == "fish"]{
-           title,
-           slug,
-           mainImage{
-            asset->{
-                _id,
-                url
-            },
-            alt
+            title,
+            slug,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                },
+                alt
+            }
         }`).then((data) => setFishData(data))
         .catch(console.error);
     }, []);
@@ -38,6 +39,11 @@ export default function Fish() {
                                  alt={fish.mainImage.alt}
                                  className="w-full h-full rounded-r object-cover absolute"
                                 />
+                                <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                                    <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-blue-700 text-blue-100 bg-opacity-75 rounded">
+                                        {fish.title}
+                                    </h3>
+                                </span>
                             </span>
                         </Link>
                         </article>

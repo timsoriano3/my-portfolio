@@ -4,6 +4,7 @@ import About from "./components/About";
 import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
+import SingleFish from "./components/SingleFish";
 import Fish from "./components/Fish";
 import NavBar from "./components/NavBar";
 
@@ -16,6 +17,7 @@ function App() {
         <Route component={About} path='/about' />
         <Route component={SinglePost} path='/post/:slug' />
         <Route component={Post} path='/post' />
+        <Route component={SingleFish} path='/fish/:slug' />
         <Route component={Fish} path='/fish' />
         <Route component={Project} path='/project' />
       </Switch>
