@@ -38,8 +38,8 @@ export default function SingleFish() {
             <article className="container shadow-lg mx-auto bg-blue-100 rounded-lg">
                 <header className="relative">
                     <div className="absolute h-100 w-30 flex items-center justify-center p-8">
-                        <div className="bg-white bg-opacity-75 rounded p-12">
-                            <h1 className="my_name text-4xl lg:text-6xl mb-4">
+                        <div className="bg-white bg-opacity-50 rounded p-4">
+                            <h1 className="my_name text-l lg:text-6xl mb-4">
                                 {singleFish.title}
                             </h1>
                             <div className="flex justify-center text-gray-800">
